@@ -1,0 +1,278 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+body {
+    background-color: #000022;
+    color: #F5F5F5;
+}
+
+h2 {
+    font-size: 200%;
+    font-weight: 500;
+    text-align: center
+}
+p {
+    font-size: 140%;
+    line-height: 120%;
+    padding: 3%;
+    text-indent: 2%;
+   
+}
+header{
+    background-color: #2A2841;
+    width: 100%;
+    height: 80px;
+}
+#header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#logo {
+    margin:10px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: url(https://elwiki.net/wiki/images/4/4a/PusheenGuildLogo.png);
+    background-size: contain;
+}
+/*-----nagivation----*/
+nav {
+    margin-left: 20px;
+    float: right;
+    padding: 20px 0 0 0;
+}
+
+
+nav ul li {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+}
+nav ul li a {
+    color: #F5F5F5; 
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #C3D7DF;
+}
+
+/*---End Nag --- */
+.Intro {
+    width: 100%;
+    height: 500px;
+}
+#Intro-inner {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto; 
+    background: url(mountain.jpg) no-repeat center;
+    background-size: 100% 100%; 
+    z-index: -2;
+    padding-top: 5%;
+    text-align: center;
+}
+#self-img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border-style: dotted;
+    border-radius: 50%;
+    border-width: thick;
+    border-color: #f4b84f;     
+}
+/*---- End Intro-------*/
+
+.body-content {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    margin-top: 45px;
+}
+#moon-earth {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+#moon-earth-text {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.body-content-2 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 45px;
+
+}
+#sun-earth-text {
+    float: left;
+    margin: 0 auto;
+    width: 50%;
+    word-wrap: break-word;
+}
+.sun-earth {
+    float: right;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+/*--moom--*/
+#earth-1 {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+}
+#moon {
+    /* Style your earth */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+    height: 50px;
+    width:50px;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+#moon-orbit {
+    /* For Section #2 */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;   
+    
+    -webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*--sun--*/
+
+#sun {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    
+    border-radius: 50%;
+    box-shadow: 0 0 128px red;
+}
+
+#earth {
+    /* Style your earth */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+    height: 50px;
+    width:50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    
+}
+
+#earth-orbit {
+    /* For Section #2 */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;   
+    
+    -webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.pusheen {
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    border-style: dashed;
+    border-width: thin;
+    border-color: #F5F5F5;
+}
+.pusheen img{
+    display: inline;
+    height: 100px;
+}
+footer {
+    text-align: center;
+}
+
+
+
+
+
+
+

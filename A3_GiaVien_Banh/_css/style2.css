@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+    letter-spacing: .1em;
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.center_body{
+    position: relative;
+    top: 150px;
+    border-top: 4px #8b575b solid;
+    background: #f4f4f4;
+    padding: 2em 0;
+}
+
+footer{
+    position: relative;
+    top: 130px;
+    padding: 3em;
+    text-align: center;
+    color: #ccc;
+}
+/*------End of Global variables---------*/
+nav{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    margin: 1em auto 0;
+    z-index: 1;
+}
+nav > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr 1.5fr; 
+    list-style: none;
+}
+nav a {
+    display: block;
+    text-align: center;
+    min-height: 45px;
+    padding: .4em;
+    box-sizing: border-box;
+    color: #8b575b;
+}
+#ver1 a{
+    color:#f3f3f3;
+}
+nav a:hover , #current{
+    background: #749fa8;
+    opacity: 0.9;
+    color: #f2eae7;
+    text-shadow: none;
+    transition: 0.3s;
+}
+ ul{
+    margin: 1em 2em;
+}
+/*-----End of nav--------*/
+#bgr{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(../_img/bg1.jpeg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+}
+#html > div{
+    margin: 2em 0.7em;
+}
+#tag , #html_struct {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5em;   
+}
+#tag >h3, #html_struct > h3{
+    grid-column: 1/4;
+    border-top: 2px #cfdacc solid;
+    padding-top: .6em;
+}
+#tag>p,#html_struct >p {
+    grid-column: 1/3
+}
+#tag>ul, #eg {
+    grid-column: 3;
+    grid-row: 2/4;
+    background:#cfdacc; 
+    padding: 1em;
+}
+#tag > ul > li {
+    margin: .5em 1em;
+}
+/*----End of HTML page-----*/
+#bg2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(../_img/pattern1.jpg);
+    opacity: 0.2;
+}
+#css > div, #media > div {
+    padding: 1em;
+}
+#css > div:nth-child(even){
+    background: rgba(89, 112, 115, .5);
+    color: #f3f3f3;
+}
+#media{
+    background: rgba(53, 83, 107, .5);
+}
+/*-----End of CSS page--------*/
+#bg3{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(../_img/bg3.jpeg) no-repeat;
+    background-size: cover;
+}
+#struct > div{
+    padding: 1em;
+}
+#struct_img{
+    height: 150px;
+    background: url(../_img/folderStruct.jpg) no-repeat;
+    background-size: contain
+}
+
+/*-----Media queries-----*/
+@media (max-width:568px){
+    nav{
+        position: relative;
+        left:0;
+        width: 100%;
+        margin: 0;
+    }
+    nav ul{
+        display: block;
+        margin: 0;
+        background: #bcd9d7;
+    }
+    #ver1 a{
+        color: #8b575b;
+    }
+    #ver1 a:hover , a#current {
+        color: #f2eae7;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+    .center_body{
+        top: auto;
+    }
+    #tag{
+        display: block;
+    }
+    
+}

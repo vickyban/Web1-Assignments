@@ -1,0 +1,34 @@
+nav{
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin: 0;
+}
+nav  ul{
+    display: block;
+    background: #5c6670;
+}
+nav a {
+    text-shadow: none;
+}
+nav a:hover , #current{
+    background: #306c86;
+    color: #a9e1e6;
+    text-shadow: none;
+}
+/*-------end of Nag----------*/
+
+#showcase > div{
+    padding: 2em;
+}
+#intro{
+    display: block;
+    width: 100%;
+}
+#intro > div{
+    padding: 3em;
+}
+#intro div > h3{
+    margin:2em 0 .5em;
+}
+

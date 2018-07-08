@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Basic HTML</title>
+        <link rel="stylesheet" type="text/css" href="../_css/style2.css">
+    </head>
+    <body>
+        <nav >
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="html.html" >HTML</a></li>
+                <li><a href="#" id="current">CSS</a></li>
+                <li><a href="webStruct.html">Website Standard</a></li>
+            </ul>
+        </nav>
+        <!--End of Nav-->
+        <div id="bg2"></div>
+        <section  class="container center_body">
+        <div id="css">
+            <div>
+                <h3>What is CSS?</h3>
+                <p>CSS stands for Cascading Style Sheets. It describes to the browser how to to display HTML elements.</p>
+            </div>
+            <div>
+                <h3 style="color: aliceblue;">How to apply CSS to HTML?</h3>
+                <p>There are three ways of adding style sheets to HTML document:</p>
+                <ul>
+                    <li>External style sheet, stores CSS document into a seperate file and links it to HTML using the syntax <br>&lt;link rel="stylesheet" type="text/css" href="path to css file.css">  </li>
+                    <li>Internal style sheet, the information is defined inside the &lt;head> section of the HTML.</li>
+                    <li>Inline style sheet, applies style to single HTML element in the style attribute </li>
+                </ul>
+                <p>In general, having CSS separate from the HTML content provides more flexibility and efficiency in managing and alterting style sheets. Hence, External style sheet is more prefered. </p>
+            </div>
+        </div>
+        <div id="media">
+            <div>
+                <h3>Media Queries</h3>
+                <p>Media Queries allows to control multiple style sheets based on some conditions. If a condition is met, a specific style will be applied. This gives web pages the responsiveness, enables it to adapt its content to fit all devices.There are two ways to apply Media Queries: </p>
+                <ul>
+                    <li>@media in CSS file to make changes in the file.</li>
+                    <li>adding media attribute inside the  &lt;link> to refer to different stylesheets. </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+        <footer>Gia Vien Banh Copyright&copy; 2018</footer>   
+    </body>
+</html>

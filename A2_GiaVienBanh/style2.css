@@ -1,0 +1,232 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+body {
+    background-color: #5E525A;
+    color: #F5F5F5;
+}
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 140%;
+    line-height: 120%;
+    padding: 3%;
+    text-indent: 2%;
+   
+}
+header{
+    position: fixed;
+    background-color: #170210;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+}
+#header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#logo {
+    margin:10px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: url(https://elwiki.net/wiki/images/4/4a/PusheenGuildLogo.png);
+    background-size: 60px;
+}
+/*-----nagivation----*/
+nav {
+    margin-left: 20px;
+    float: left;
+    padding: 20px 0 0 0;
+}
+
+nav ul li {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+}
+nav ul li a {
+    color: #F5F5F5; 
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #C3D7DF;
+}
+
+/*---End Nag --- */
+.Intro {
+    position: relative;
+    padding-top: 90px;
+    width: 100%;
+    height: 400px;
+}
+#Intro-inner img {
+    display: block;
+    height: 50%;
+}
+#Intro-inner {
+    height: 100%;
+    margin: 0 auto; 
+    padding-top: 5%;
+    text-align: center;
+}
+#self-img {
+    width: 200px;
+    margin: 0 auto;
+    border-style: dotted;
+    border-radius: 50%;
+    border-width: thick;
+    border-color: #F5F5F5;         
+}
+
+/*---- End Intro-------*/
+
+.body-content {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    margin-top: 45px;
+}
+#moon-earth {
+    display: none;
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#moon-earth-text {
+    float: left;
+    width: 100%;
+    height: 100%;
+    word-wrap: break-word;
+    border-style: solid;
+    border-width: thin;
+    border-color: #F5F5F5;
+    padding: 2%;
+}
+
+.body-content-2 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 45px;
+
+}
+#sun-earth-text {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+    word-wrap: break-word;
+    border-style: solid;
+    border-width: thin;
+    border-color: #F5F5F5;
+    padding: 2%;
+}
+.sun-earth {
+    display: none;
+    float: right;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+/*--moom--*/
+#earth-1 {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+}
+/*--sun--*/
+
+#sun {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+#earth {
+    /* Style your earth */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+    height: 50px;
+    width:50px;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+#earth-orbit {
+    /* For Section #2 */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;   
+    
+    -webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.pusheen {
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    border-style: dashed;
+    border-width: thin;
+    border-color: #F5F5F5;
+}
+.pusheen img{
+    display: inline;
+    height: 100px;
+}
+footer {
+    text-align: center;
+}
+
+
+
+
+
+
+

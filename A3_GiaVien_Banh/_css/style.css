@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+    letter-spacing: .1em;
+    text-decoration: none;
+}
+.container{
+    width: 85%;
+    margin: auto;
+    box-sizing: border-box;
+}
+/*------End of Global variables---------*/
+nav{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    margin: 1em auto 0;
+    z-index: 1;
+}
+nav  ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr 1.5fr;  
+    list-style: none;
+}
+nav a {
+    display: block;
+    text-align: center;
+    height: auto;
+    padding: .6em;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 4px 4px 20px #003;
+}
+nav a:hover , #current{
+    background: #eee;
+    opacity: 0.9;
+    color: #306c86;
+    text-shadow: none;
+    transition: 0.3s;
+}
+/*-------end of Nag----------*/
+#showcase{
+    height: 350px;
+    padding-top: 150px;
+    box-sizing: border-box;
+    background: url(../_img/cityNight.jpeg) no-repeat center;
+    background-size: cover;
+    z-index: -1; 
+}
+#showcase > div{
+    text-align: center;
+    color: #f3f3f3;
+    text-shadow: 4px 4px 15px #000005;
+    padding: 1em;
+}
+/*----------*/
+#intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+#intro > div{
+    padding: 1em;
+}
+#intro div:nth-child(even){
+    background: #f3f3f3;
+}
+#intro div:nth-child(odd){
+    background: #5c6670;
+    color: #f2f2f2;
+}
+#intro div > h3{
+    margin:4em 0 .5em;
+}
+#intro ul{
+    margin-top: 1em;
+    padding-left: 3em;
+    list-style:circle;
+}
+/*----end of intro-----*/
+footer{
+    padding-top: 3em;
+    text-align: center;
+    color: #ccc;
+}
